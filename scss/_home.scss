@@ -1,0 +1,98 @@
+/*edicion home*/
+
+/*mixin*/
+@mixin size ($borde, $borde-r, $espaciado, $alineacion) {
+    border: $borde;
+    border-radius: $borde-r;
+    margin: $espaciado;
+    text-align: $alineacion;
+}
+
+
+main {
+    @include size(5px solid $color-principal,10px,60px 20px 20px 20px, center)
+}
+
+
+
+
+.encabezado-home {
+    padding-top: 20px;
+}
+
+
+
+
+/*extend*/
+.titulos-servicios {
+    text-align: center;
+
+}
+
+.titulos {
+    @extend .titulos-servicios;
+    font-family: 'Square Peg', cursive;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+
+
+
+
+.servicios {
+    display: flex;
+    direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.eventos-1 {
+    flex: 1;
+    padding: 25px;
+    margin: 20px;
+    border: $default-border $color-principal;
+    min-width: 250px;
+}
+
+
+.catering {
+    flex: 1;
+    padding: 25px;
+    margin: 20px;
+    min-width: 250px;
+    border: 3px solid $color-principal;
+}
+
+.servicios img {
+    margin: 50px 30px ;
+    width: 200px;
+    height:200px;
+}
+
+
+
+.individuales {
+    flex: 1;
+    padding: 25px;
+    margin: 20px;
+    min-width: 250px;
+    border: $default-border $color-principal;
+}
+
+
+.cajas {
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+
+@media (min-width:1024px) {
+.cajas:hover{
+    transform: scale(1.05);
+    
+    }
+}

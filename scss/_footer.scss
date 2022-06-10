@@ -1,0 +1,40 @@
+/*edicion footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+    
+}
+
+
+
+.texto-footer {
+    text-align: center;
+    margin: 30px;
+}
+
+
+/*mapas*/
+$redes: (
+    instagram: rgb(138, 65, 138),
+    whatsapp: rgb(42, 190, 67),
+    gmail: rgb(255, 0, 0),
+    
+);
+
+@each $red, $color in $redes {
+    .red-#{$red} {
+        color: $color;
+    }
+}

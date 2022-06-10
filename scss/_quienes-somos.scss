@@ -1,0 +1,55 @@
+/* edicion quienes somos*/
+
+
+
+
+
+
+
+.historia {
+    margin: 60px 20px 20px 20px ;
+    border: $default-border $color-principal;
+    border-radius: 10px;
+}
+
+
+
+.mini-galeria__contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-columns: 150px;
+    padding: 20px;
+    grid-gap: 5px;
+    justify-content: space-between;
+
+}
+
+
+.mini-galeria__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+}
+
+@media (min-width:600px) {
+    .mini-galeria__contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width:768px) {
+    .mini-galeria__contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .mini-galeria__contenedor {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .mini-galeria__img:hover{
+        transform: scale(1.05);
+    }
+}

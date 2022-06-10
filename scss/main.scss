@@ -1,0 +1,46 @@
+$color-principal:#fd98e7;
+$default-border: 3px solid;
+
+
+
+
+* {
+    font-size: 15px ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+/*edicion totodos los titulos*/
+
+.titulos {
+    font-size: 45px !important;
+    text-align: center;
+}
+
+
+
+
+
+@import "home";
+
+@import "herosection";
+
+
+@import "quienes-somos";
+
+
+
+@import "galeria";
+
+
+
+@import "contacto";
+
+
+@import "footer";
+
+

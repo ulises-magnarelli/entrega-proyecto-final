@@ -1,0 +1,98 @@
+/*edicion contacto*/
+
+
+
+
+
+
+.titulo-contacto {
+    text-align: center;
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    padding-top: 100px ;
+
+    
+
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.sede {
+    flex: 1;
+    padding: 25px;
+    margin: 20px;
+    border: $default-border $color-principal;
+    border-radius: 10px;
+    min-width: 250px;
+
+    text-align: center;
+}
+
+
+.eventos {
+    flex: 1;
+    padding: 25px;
+    margin: 20px;
+    min-width: 250px;
+
+
+    border: $default-border $color-principal;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.escribinos {
+    flex: 1;
+    padding: 25px;
+    margin: 20px;
+    min-width: 250px;
+
+
+    list-style-type: none;
+    border: $default-border $color-principal;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ingresa-datos {
+    list-style-type: none;
+    align-items: flex-start;
+}
+
+
+.boton-enviar {
+    justify-items: flex-end;
+}
+
+
+
+.mapa {
+    border-radius: 3px;
+    border: 5px solid black;
+    margin: 50px;
+
+    top: 0px; 
+    left: 0px; 
+    background-color: rgb(229, 227, 223);  
+}
+
+
+iframe{
+    width: 100%;
+}
+
+.cajasContacto {
+    transition: 0.5s;
+    object-fit: over;
+}
+
+@media (min-width:1024px) {
+    .cajasContacto:hover{
+        transform: scale(1.05);
+        }
+}

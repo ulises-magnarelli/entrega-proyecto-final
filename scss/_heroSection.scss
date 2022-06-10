@@ -1,0 +1,47 @@
+/*edicion herosection*/
+
+
+
+.herosection {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.descripción {
+    flex: 1;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+
+    text-align: center;
+}
+
+
+.fotoAle {
+    flex: 1;
+    padding: 25px;
+    margin: 20px;
+    min-width: 250px;
+
+
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+
+.cajasHero {
+    transition: 0.5s;
+    object-fit: over;
+}
+
+@media (min-width:1024px) {
+    .cajasHero:hover{
+        transform: scale(1.05);
+        }
+}
